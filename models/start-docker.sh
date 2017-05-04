@@ -1,0 +1,1 @@
+docker run -it -p 8080:80 -v /$(pwd):/opt/models jcsilva/docker-kaldi-gstreamer-server:latest //bin/bash

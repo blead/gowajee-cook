@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gowajee Cook</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="lib/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="gowajee.png">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <section>
+        <div class="row">
+          <div class="two-thirds column">
+            <h1>Gowajee Cook</h1>
+            <h4>Voice-enabled cooking assistant</h4>
+          </div>
+          <div class="one-third column">
+            <img style="max-height: 7.5rem" class="u-pull-right u-img-responsive" src="gowajee.png">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="one-half column">
+            <button id="buttonToggleListening" class="button-primary" disabled="disabled" title="Start/stop listening for speech">Start</button>
+            <button id="buttonCancel" disabled="disabled" title="Cancel the speech recognition">Cancel</button>
+          </div>
+          <div class="one-half column">
+            <p>
+              server: <code id="targetServer">unknown</code><br>
+              workers: <span id="availableWorkers">0</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 style="height: 8rem" id="transcript"></h3>
+      </section>
+
+      <hr>
+
+      <section>
+        <h5>Quick Usage Guide</h5>
+        <p>Any combination works</p>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>wake/sleep phrase</th>
+              <th>commands</th>
+              <th>menu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>โกวาจี</td>
+              <td>ขอสูตรอาหาร</td>
+              <td>ไข่เจียว</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>สอนทำ</td>
+              <td>ต้มมาม่า</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>อยากทำ</td>
+              <td>ผัดกะเพรา</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>หาวิธีทำ</td>
+              <td>หมูทอดกระเทียม</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>ขอวัตถุดิบ</td>
+              <td>สุกี้แห้ง</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <script src="lib/js/jquery-3.2.1.min.js"></script>
+    <script src="lib/js/dictate.js"></script>
+    <script src="lib/js/recorder.js"></script>
+    <script src="lib/js/responsivevoice.js"></script>
+    <script src="lib/js/fuse.min.js"></script>
+    <script src="core/config.js"></script>
+    <script src="core/recipes.js"></script>
+    <script src="core/commands.js"></script>
+    <script src="core/gowajee.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+/opt/start.sh -y /opt/models/gowajee.yaml

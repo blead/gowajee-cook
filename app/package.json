@@ -1,0 +1,27 @@
+{
+  "name": "gowajee-cook",
+  "version": "0.0.1",
+  "description": "voice-enabled cooking assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard",
+    "fix": "standard --fix"
+  },
+  "author": "blead",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "standard": "^10.0.2"
+  },
+  "standard": {
+    "ignore": [
+      "/src/lib/"
+    ],
+    "globals": [
+      "$",
+      "Dictate",
+      "responsiveVoice"
+    ]
+  }
+}
