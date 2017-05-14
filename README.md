@@ -49,9 +49,9 @@ requirement: [Docker](http://docker.com/)
 ```
 docker pull jcsilva/docker-kaldi-gstreamer-server
 ```
-2. Access the directory `/app/models/`:
+2. Access the directory `/models/`:
 ```
-cd /app/models
+cd /models
 ```
 3. Create a container:  
 `./start-docker.sh`  
