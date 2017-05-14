@@ -1,6 +1,6 @@
 /* global RECIPES */
 var COMMANDS = {
-  thresholds: [0.3, 0.1, 0.3],
+  thresholds: [0.4, 0.4, 0.4],
   maxLengths: [16, 36, 16],
   minLengths: [3, 3, 3]
 }
